@@ -4,6 +4,7 @@ public class Person {
  private String firstName;
  private String lastName;
  int age ; // Default access modifier
+ protected double salary;
 
   public void printFullName(){
     System.out.println(firstName +" "+ lastName);

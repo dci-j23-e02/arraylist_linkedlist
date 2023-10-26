@@ -1,6 +1,7 @@
 package arraylists;
 
 
+import linkedlists.Employee;
 
 public class Main {
 
@@ -16,5 +17,7 @@ public class Main {
     e1.setFirstName("Karol");
     e1.setLastName("Fischer");
   //  e1.printFullName();
+
+    p1.salary = 5600;
   }
 }

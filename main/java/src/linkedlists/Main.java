@@ -14,5 +14,11 @@ public class Main {
     // p2.age = 20; // Default access modifier
     p2.setAge(20);
     System.out.println(p2.getAge());
+
+    // p2.salary = 5600; // salary has protected access;
+    Employee e2 = new Employee();
+    // e2.salary = 4000; // salary has protected access;
+    e2.setSalary(4000);
+    System.out.println(e2.getSalary());
   }
 }

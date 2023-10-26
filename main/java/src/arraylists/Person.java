@@ -5,10 +5,21 @@ public class Person {
  private String lastName;
  int age ; // Default access modifier
  protected double salary;
+  // static means the entity belongs to the class
+  // final attributes are constants ( cannot be assigned new values )
+ public static final String TYPE = "Person";
 
   public void printFullName(){
     System.out.println(firstName +" "+ lastName);
+  }
 
+  // static means the entity belongs to the class
+  public static Person makePerson(String firstName, String lastName){
+    Person p = new Person() ;
+    p.firstName = firstName;
+    p.lastName = lastName;
+
+    return p;
   }
 
 

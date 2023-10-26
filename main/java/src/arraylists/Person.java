@@ -3,6 +3,7 @@ package arraylists;
 public class Person {
  private String firstName;
  private String lastName;
+ int age ; // Default access modifier
 
   public void printFullName(){
     System.out.println(firstName +" "+ lastName);
@@ -31,5 +32,13 @@ public class Person {
 
   public void setLastName(String lastName) {
     this.lastName = lastName;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
   }
 }

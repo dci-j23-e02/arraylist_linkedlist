@@ -6,10 +6,14 @@ import arraylists.Person;
 
 public class Employee extends Person {
 
-public static void main(String[] args) {
+  public Employee(String firstName, String lastName, int age, double salary) {
+    super(firstName, lastName, age, salary);
+  }
+
+  public static void main(String[] args) {
     // Person person = new Person();
    // person.salary = 6000; // not allowed
-  Employee x = new Employee();
+  Employee x = new Employee("Harris", "Rise", 12, 270);
   x.salary = 4000;
  }
 

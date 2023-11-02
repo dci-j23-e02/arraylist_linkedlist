@@ -15,13 +15,18 @@ public class Person {
 
   // static means the entity belongs to the class
   public static Person makePerson(String firstName, String lastName){
-    Person p = new Person() ;
-    p.firstName = firstName;
-    p.lastName = lastName;
+    Person p = new Person(firstName, lastName, 19, 5400) ;
+
 
     return p;
   }
 
+  public Person(String firstName, String lastName, int age, double salary) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.salary = salary;
+  }
 
   public String getFirstName() {
     return firstName;

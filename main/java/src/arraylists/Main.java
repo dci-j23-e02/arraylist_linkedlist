@@ -6,14 +6,14 @@ import linkedlists.Employee;
 public class Main {
 
   public static void main(String[] args) {
-    Person p1 = new Person();
+    Person p1 = new Person("John", "Doe", 23, 5000.0);
     p1.setFirstName("");
     p1.setLastName("Doe");
    // p1.printFullName();
     p1.age = 23;
    // System.out.println(p1.age);
 
-    Employee e1 = new Employee();
+    Employee e1 = new Employee("Karol", "Fischer", 32, 3500);
     e1.setFirstName("Karol");
     e1.setLastName("Fischer");
   //  e1.printFullName();

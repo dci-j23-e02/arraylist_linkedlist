@@ -1,6 +1,9 @@
 package arraylists;
 
 public class Person {
+
+  // Fields
+
  private String firstName;
  private String lastName;
  int age ; // Default access modifier
@@ -9,17 +12,8 @@ public class Person {
   // final attributes are constants ( cannot be assigned new values )
  public static final String TYPE = "Person";
 
-  public void printFullName(){
-    System.out.println(firstName +" "+ lastName);
-  }
 
-  // static means the entity belongs to the class
-  public static Person makePerson(String firstName, String lastName){
-    Person p = new Person(firstName, lastName, 19, 5400) ;
-
-
-    return p;
-  }
+ // Constructor
 
   public Person(String firstName, String lastName, int age, double salary) {
     this.firstName = firstName;
@@ -27,6 +21,24 @@ public class Person {
     this.age = age;
     this.salary = salary;
   }
+
+
+  //Static methods
+  // static means the entity belongs to the class
+  public static Person makePerson(String firstName, String lastName){
+    Person p = new Person(firstName, lastName, 19, 5400) ;
+   return p;
+  }
+
+
+  // Methods
+  public void printFullName(){
+    System.out.println(firstName +" "+ lastName);
+  }
+
+
+
+ // Getters and Setters
 
   public String getFirstName() {
     return firstName;

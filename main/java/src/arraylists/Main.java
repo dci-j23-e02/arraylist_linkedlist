@@ -1,8 +1,9 @@
 package arraylists;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-import linkedlists.Employee;
 
 public class Main {
 
@@ -38,10 +39,12 @@ public class Main {
 
 
     // Arrays vs ArrayLists
-
+    /*
+    // Arrays
     int n = 10;
     int index = 0;
     int[] numbers = new int[n];
+    int[] backUp;
     int num;
     Scanner input = new Scanner(System.in);
 
@@ -49,15 +52,79 @@ public class Main {
     do{
       System.out.println("Please enter the number to be added, and -1 to exit: ");
       num = input.nextInt();
-      numbers[index] = num;
-      index++;
+      if(index < numbers.length -1 ){
+        numbers[index] = num;
+        index++;
+      }else{
+        backUp = new int[numbers.length + n];
+        for (int i = 0; i < numbers.length; i++) {
+          backUp[i] = numbers[i];
+        }
+        numbers = backUp;
+        numbers[index] = num;
+        index++;
+      }
+
+
     }while(num != -1);
 
     for (int number : numbers) {
       System.out.println(number);
     }
 
-    input.close();
+    input.close(); */
+
+    // ArrayLists
+   ArrayList<String> animals = new ArrayList<>();
+    // System.out.println(animals.size());
+   animals.add("Lion");
+  //  System.out.println(animals.size());
+    animals.add("Tiger");
+ //   System.out.println(animals.size());
+    animals.add("Cat");
+  //  System.out.println(animals.size());
+    // animals.remove(2);
+    animals.remove("Tiger");
+  //  System.out.println(animals);
+  //  System.out.println(animals.size());
+
+
+    animals.add(1, "Dog");
+   // System.out.println(animals);
+   // System.out.println(animals.size());
+
+    //
+    Integer[] numbers = {1,2,3};
+    List<Integer> myListOfNumbers = List.of(numbers);
+    ArrayList<Integer> newNumbers = new ArrayList<>(myListOfNumbers);
+
+    // ArrayList<Integer> newNumbers = new ArrayList<>(List.of(numbers));
+   // System.out.println(newNumbers);
+
+
+
+    ArrayList<Person> students = new ArrayList<>();
+    Person std1 = new Person("Max", "Doe");
+    Person std2 = new Person("John", "Doe");
+    Person std3 = new Person("Yasmin", "Doe");
+
+    students.add(std1);
+    students.add(std2);
+    students.add(std3);
+
+    for (Person x: students) {
+      x.printFullName();
+    }
+
+
+
+
+
+
+
+
+
+
 
 
   }

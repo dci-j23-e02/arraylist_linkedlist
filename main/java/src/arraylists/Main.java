@@ -2,6 +2,7 @@ package arraylists;
 
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -111,10 +112,31 @@ public class Main {
     students.add(std1);
     students.add(std2);
     students.add(std3);
-
+/*
     for (Person x: students) {
       x.printFullName();
-    }
+    }*/
+
+    LinkedList<String> friends = new LinkedList<>();
+    friends.add("John");
+    friends.add("Chris");
+
+    friends.add("David");
+    friends.add("Chris");
+    friends.add("David");
+
+    friends.add("Chris");
+
+    System.out.println(friends);
+    System.out.println(friends.getFirst());
+    System.out.println(friends.get(1));
+
+    friends.removeFirst();
+    System.out.println(friends);
+    System.out.println(friends.indexOf("Safwan")); // -1 if not found
+    System.out.println(friends.lastIndexOf("Chris")); // 4
+
+
 
 
 

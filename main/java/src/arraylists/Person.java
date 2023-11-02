@@ -22,6 +22,15 @@ public class Person {
     this.salary = salary;
   }
 
+  public Person(String firstName, String lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  public Person(){
+
+  }
+
 
   //Static methods
   // static means the entity belongs to the class

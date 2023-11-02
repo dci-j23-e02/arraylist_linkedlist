@@ -18,7 +18,7 @@ public class Employee extends Person {
     // Person person = new Person();
    // person.salary = 6000; // not allowed
   Employee x = new Employee("Harris", "Rise", 12, 270);
-  x.salary = 4000;
+  x.salary = 4000; // re-assignment
  }
 
  //Getters and Setters
